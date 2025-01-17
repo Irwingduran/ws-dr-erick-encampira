@@ -1,6 +1,5 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Facebook, Instagram, MapPin, Phone } from 'lucide-react'
+import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react'
 import { Button } from "../components/ui/button"
 import Sidebar from "@/components/Sidebar"
 import {
@@ -10,30 +9,18 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card"
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "../components/ui/alert-dialog"
-
 
 export default function ContactPage() {
-  const [showCookieConsent, setShowCookieConsent] = useState(true)
-
   return (
     <div className="min-h-screen bg-white">
       <Sidebar />
-      <main className="ml-[320px] p-12">
-        <div className="max-w-4xl">
-          <h1 className="text-4xl text-[#2D3339] mb-12">
+      <main className="md:ml-[320px] p-4 md:p-12">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-2xl md:text-4xl text-[#2D3339] mb-6 md:mb-12">
             Contáctame, con gusto puedo ayudarte.
           </h1>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-6 md:gap-8 md:grid-cols-2">
             <Card>
               <CardHeader>
                 <CardTitle>Información de Contacto</CardTitle>
@@ -41,40 +28,50 @@ export default function ContactPage() {
                   Agenda una cita o sígueme en redes sociales
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-4 md:space-y-6 p-4 md:p-6">
                 <div className="space-y-2">
                   <h3 className="font-medium">Dirección:</h3>
-                  <p className="text-gray-600">Hospital ABC Observatorio</p>
+                  <p className="text-gray-600">Carmen Serdán 301,</p>
                   <p className="text-gray-600">
-                    Sur 136 No. 116, Las Américas, Álvaro Obregón,
+                    Residencial Colón y Colonia Ciprés,
                     <br />
-                    01120 Ciudad de México, CDMX
+                    Toluca de Lerdo, Toluca, Estado de México.
                   </p>
-                  <p className="text-gray-600">Consultorio 54-55</p>
+                  <p className="text-gray-600">Lunes a Viernes 10 AM -6 PM</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium mb-2">Teléfono:</h3>
                   <a
-                    href="tel:5524632611"
+                    href="tel:7222429505"
                     className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
                   >
                     <Phone className="h-4 w-4" />
-                    55 2463 2611
+                    7222429505
+                  </a>
+                </div>
+                <div>
+                <h3 className="font-medium mb-2">Correo Electrónico:</h3>
+                <a
+                    href="mailto:drencampira@gmail.com"
+                    className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
+                  >
+                    <Mail className="h-4 w-4" />
+                    drencampira@gmail.com
                   </a>
                 </div>
 
                 <div>
                   <h3 className="font-medium mb-2">Sígueme en:</h3>
-                  <div className="flex gap-4">
+                  <div className="flex flex-wrap gap-4">
                     <Button variant="outline" asChild>
-                      <Link to="#facebook" className="flex items-center gap-2">
+                      <Link to="https://www.facebook.com/dr.encampira.oftalmologo" target="_blank" className="flex items-center gap-2">
                         <Facebook className="h-4 w-4" />
                         FACEBOOK
                       </Link>
                     </Button>
                     <Button variant="outline" asChild>
-                      <Link to="#instagram" className="flex items-center gap-2">
+                      <Link to="https://www.instagram.com/oftalmo.doc/" target="_blank" className="flex items-center gap-2">
                         <Instagram className="h-4 w-4" />
                         INSTAGRAM
                       </Link>
@@ -89,7 +86,7 @@ export default function ContactPage() {
                 <CardTitle>Ubicación</CardTitle>
                 <CardDescription>
                   <Link
-                    to="https://maps.google.com"
+                    to="https://maps.app.goo.gl/voRFsutb7jxFVtyY7"
                     className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
                   >
                     <MapPin className="h-4 w-4" />
@@ -98,9 +95,9 @@ export default function ContactPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="aspect-square w-full rounded-lg bg-gray-100">
+                <div className="aspect-square w-full rounded-lg bg-gray-100 overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5!2d-99.2!3d19.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI0JzAwLjAiTiA5OcKwMTInMDAuMCJX!5e0!3m2!1sen!2s!4v1234567890!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3766.1398321682136!2d-99.66372922478959!3d19.27628438196991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE2JzM0LjYiTiA5OcKwMzknNDAuMiJX!5e0!3m2!1ses!2smx!4v1737132219114!5m2!1ses!2smx"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -115,29 +112,7 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-
-      <AlertDialog open={showCookieConsent} onOpenChange={setShowCookieConsent}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Cookies</AlertDialogTitle>
-            <AlertDialogDescription>
-              Este sitio web utiliza Cookies propias y de terceros para recopilar
-              información con la finalidad de mejorar nuestros servicios, para
-              mostrarle publicidad relacionada con sus preferencias, así como
-              analizar sus hábitos de navegación. El usuario tiene la posibilidad
-              de configurar su navegador pudiendo, si así lo desea, impedir que
-              sean instaladas en su disco duro, aunque deberá tener en cuenta que
-              dicha acción podrá ocasionar dificultades de navegación de la página
-              web.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogAction onClick={() => setShowCookieConsent(false)}>
-              Aceptar
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
     </div>
   )
 }
+
