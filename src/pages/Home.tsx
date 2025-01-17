@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, PhoneIcon as WhatsApp, Calendar } from "lucide-react";
+import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
 
