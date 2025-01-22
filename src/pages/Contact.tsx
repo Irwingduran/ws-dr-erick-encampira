@@ -17,18 +17,15 @@ export default function ContactPage() {
       <main className="md:ml-[320px] p-4 md:p-12">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl md:text-4xl text-[#2D3339] mb-6 md:mb-12">
-            Contáctame, con gusto puedo ayudarte.
+            Contáctame, con gusto puedo ayudarte
           </h1>
 
           <div className="grid gap-6 md:gap-8 md:grid-cols-2">
             <Card>
               <CardHeader>
                 <CardTitle>Información de Contacto</CardTitle>
-                <CardDescription>
-                  Agenda una cita o sígueme en redes sociales
-                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4 md:space-y-6 p-4 md:p-6">
+              <CardContent className="space-y-4 md:space-y-6">
                 <div className="space-y-2">
                   <h3 className="font-medium">Dirección:</h3>
                   <p className="text-gray-600">Carmen Serdán 301,</p>
@@ -37,6 +34,9 @@ export default function ContactPage() {
                     <br />
                     Toluca de Lerdo, Toluca, Estado de México.
                   </p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-medium">Horario:</h3>
                   <p className="text-gray-600">Lunes a Viernes 10 AM -6 PM</p>
                 </div>
 

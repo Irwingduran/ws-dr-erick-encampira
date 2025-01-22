@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
+import ReviewCarousel from "@/components/ReviewCarousel";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Sidebar />
-      <main className="md:ml-[320px] p-4 md:p-12">
+      <main className="md:ml-[320px]">
       {/* Imagen de Fondo */}
      <section 
     className="relative h-screen bg-cover bg-center bg-no-repeat"
@@ -16,10 +18,10 @@ export default function Home() {
     <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center text-white">
       <div className="px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Bienvenido a mi consulta
+          Dr. Erick O. Encampira Luna
         </h1>
         <p className="text-lg md:text-xl">
-          Cuida tu salud visual con el mejor equipo médico.
+         ¡Bienvenido a mi consulta! Cuida tu salud visual con el mejor equipo médico.
         </p>
       </div>
     </div>
@@ -137,8 +139,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Frase Inspiradora */}
-        <section className="mt-12 bg-gradient-to-r from-[#2D3339] to-gray-800 text-white rounded-lg p-8 md:p-12 text-center">
+        {/* Frase MMDRA */}
+        <section className="mt-12 bg-gradient-to-r from-[#2D3339] to-gray-800 text-white p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             "Tu salud visual es nuestra prioridad"
           </h2>
@@ -146,6 +148,14 @@ export default function Home() {
             Confía en un equipo altamente capacitado para cuidar de tus ojos.
           </p>
         </section>
+        <section>
+          <VideoSection/>
+        </section>
+        <section>
+          <ReviewCarousel/>
+        </section>
+        
+
       </main>
     </div>
   );

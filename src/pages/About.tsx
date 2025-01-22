@@ -4,23 +4,23 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Sidebar />
-      <main className="md:ml-[320px] p-4 md:p-12">
+      <main className="md:ml-[320px]">
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Sección Superior */}
-          <section className="bg-white rounded-lg shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8 items-center">
+          <section className="bg-white rounded-lg shadow-lg md:p-10 flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-[40%] rounded-lg overflow-hidden shadow-md">
               <img
-                src="/placeholder.jpg"
-                alt="Dr. Sergio Moreno Jiménez"
+                src="/img/docAbout.jpg"
+                alt="Doctor"
                 className="object-cover w-full h-full"
               />
             </div>
             <div className="flex-1">
               <h1 className="text-[#2D3339] text-3xl md:text-4xl font-semibold mb-4">
-                Soy el Dr. Sergio Moreno Jiménez
+                Soy el Dr. Erick O. Encampira Luna
               </h1>
               <p className="text-gray-600 text-lg mb-2">
-                <strong>Cédula profesional:</strong> 4412196
+                <strong>Cédula profesional:</strong> 6175744
               </p>
               <p className="text-gray-700 leading-relaxed">
                 El Dr. Encampira realizó la carrera de Médico Cirujano en la
