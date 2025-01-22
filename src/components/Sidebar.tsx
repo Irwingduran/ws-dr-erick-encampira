@@ -1,4 +1,4 @@
-import { Brain, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -24,10 +24,8 @@ export default function Sidebar() {
       >
         {/* Header Section */}
         <div className="flex flex-col items-center pt-8 pb-12">
-          <Brain className="w-16 h-16 mb-4" />
-          <h2 className="text-3xl font-medium">Dr. Erick O. Encampira</h2>
-          <h2 className="text-3xl">Luna</h2>
-          <p className="text-gray-300 mt-2">Oftalmología</p>
+          <a href="/"><img src="/log.avif" alt="logo" width={250} />
+          <p className="text-gray-300 mt-2">Dr. Erick O. Encampira Luna</p></a>
         </div>
 
         {/* Navigation */}
