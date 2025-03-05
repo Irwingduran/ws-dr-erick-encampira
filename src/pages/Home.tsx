@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
-import ReviewCarousel from "@/components/ReviewCarousel";
 import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
@@ -151,10 +150,7 @@ export default function Home() {
         <section>
           <VideoSection/>
         </section>
-        <section>
-          <ReviewCarousel/>
-        </section>
-        
+
 
       </main>
     </div>

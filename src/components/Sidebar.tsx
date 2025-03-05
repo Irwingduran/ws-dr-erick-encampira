@@ -34,6 +34,7 @@ export default function Sidebar() {
               ["CONÓCEME", "/about"],
               ["SERVICIOS", "/services"],
               ["CONTÁCTAME", "/contact"],
+              ["RESEÑAS", "/resenas"],
             ].map(([label, href]) => (
               <li key={label}>
                 <Link
@@ -56,16 +57,16 @@ export default function Sidebar() {
           </p>
           <div className="text-sm text-gray-400">
             <p>
-              Creado por{" "}
-              <a href="https://delta-digital.com.mx/" className="hover:text-yellow-300">
-                Agencia Delta
+              Creado por Delta by {" "}
+              <a href="https://marketingmedicos.com.mx/" className="hover:text-yellow-300">
+                Imagen Médica
               </a>
             </p>
           </div>
         </div>
 
         <div className="p-8">
-          <Link to="/appointment">
+          <Link to="https://api.whatsapp.com/send/?phone=5217222429505&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0">
             <button className="w-full py-3 bg-yellow-400 text-black font-bold rounded-md hover:bg-yellow-300 transition">
               Agendar Cita
             </button>

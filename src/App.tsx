@@ -5,7 +5,7 @@ import AboutPage from './pages/About'
 import ServicesPage from './pages/Service'
 import ContactPage from './pages/Contact'
 import ServiceDetails from './pages/ServiceDetails'
-
+import Resena from './pages/Resenas'
 function App() {
   return (
     <Routes>
@@ -14,6 +14,7 @@ function App() {
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/service" element={<ServiceDetails/>} />
+      <Route path='/resenas' element={<Resena/>} />
     </Routes>
   )
 }
