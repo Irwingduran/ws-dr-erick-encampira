@@ -3,6 +3,7 @@ import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
 import VideoSection from "@/components/VideoSection";
+import Mockup from "./Mockup";
 
 export default function Home() {
   return (
@@ -17,10 +18,14 @@ export default function Home() {
     <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center text-white">
       <div className="px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Dr. Erick O. Encampira Luna
+        ¡Hola! Soy el Dr. Erick O. Encampira Luna
         </h1>
         <p className="text-lg md:text-xl">
-         ¡Bienvenido a mi consulta! Cuida tu salud visual con el mejor equipo médico.
+        Oftalmólogo con una amplia experiencia en: <br /> <br />
+  Cirugía Refractiva Con Láser <br />
+         Cirugía Segmento Anterior <br />
+  Córnea
+
         </p>
       </div>
     </div>
@@ -36,11 +41,58 @@ export default function Home() {
           </p>
           <Button
             variant="outline"
-            className="mt-6 bg-white text-black hover:bg-gray-100 px-6 py-3 text-lg font-medium"
+            className="mt-6 bg-white text-black cursor-default hover:bg-gray-100 px-6 py-3 text-lg font-medium"
             asChild
           >
-            <Link to="/about">Conoce más sobre mi práctica</Link>
+            <Link to="">Cédula profesional: 6175744</Link>
           </Button>
+        </section>
+
+        {/* Sección Informativa */}
+        <section className="mt-12 bg-gray-100 rounded-lg shadow-lg p-6 md:p-10">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Texto */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold text-[#2D3339]">
+                Soy el Dr. Erick O. Encampira Luna, especialista en Oftalmología.
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Me preocupo por evaluar la situación de cada paciente en forma
+                personalizada, con la finalidad de poder hacer un diagnóstico
+                preciso y oportuno. Esto me permitirá ofrecer un tratamiento
+                adecuado a cada paciente. Lo más importante es siempre pensar en
+                lograr ofrecer la mejor calidad de vida para cada paciente.
+              </p>
+              <ul className="space-y-4 text-gray-700">
+                <li>
+                  • Miembro activo de la Sociedad Mexicana de Oftalmología, SMO,
+                  2015.
+                </li>
+                <li>
+                  • Miembro de la ESCRS, European Society of Cataract &
+                  Refractive Surgeons, 2014.
+                </li>
+                <li>
+                  • Médico Adscrito de Segmento Anterior y Catarata, APEC /
+                  Asociación para Evitar la Ceguera en México, 2015.
+                </li>
+                <li>
+                  • Especialista en Córnea, Catarata, y Cirugía refractiva,
+                  Stein Eye Institute - University of California, Los Angeles
+                  (UCLA), 2018.
+                </li>
+              </ul>
+            </div>
+
+            {/* Imagen */}
+            <div className="relative aspect-4/3 w-full">
+              <img
+                src="/img/img1.jpg"
+                alt="Dr. Erick O. Encampira Luna"
+                className="rounded-lg object-cover w-full h-full"
+              />
+            </div>
+          </div>
         </section>
 
         {/* Sección de Citas */}
@@ -90,53 +142,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Sección Informativa */}
-        <section className="mt-12 bg-gray-100 rounded-lg shadow-lg p-6 md:p-10">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Texto */}
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-[#2D3339]">
-                Soy el Dr. Erick O. Encampira Luna, especialista en Oftalmología.
-              </h2>
-              <p className="text-gray-600">Cédula profesional: 6175744</p>
-              <p className="text-gray-700 leading-relaxed">
-                Me preocupo por evaluar la situación de cada paciente en forma
-                personalizada, con la finalidad de poder hacer un diagnóstico
-                preciso y oportuno. Esto me permitirá ofrecer un tratamiento
-                adecuado a cada paciente. Lo más importante es siempre pensar en
-                lograr ofrecer la mejor calidad de vida para cada paciente.
-              </p>
-              <ul className="space-y-4 text-gray-700">
-                <li>
-                  • Miembro activo de la Sociedad Mexicana de Oftalmología, SMO,
-                  2015.
-                </li>
-                <li>
-                  • Miembro de la ESCRS, European Society of Cataract &
-                  Refractive Surgeons, 2014.
-                </li>
-                <li>
-                  • Médico Adscrito de Segmento Anterior y Catarata, APEC /
-                  Asociación para Evitar la Ceguera en México, 2015.
-                </li>
-                <li>
-                  • Especialista en Córnea, Catarata, y Cirugía refractiva,
-                  Stein Eye Institute - University of California, Los Angeles
-                  (UCLA), 2018.
-                </li>
-              </ul>
-            </div>
-
-            {/* Imagen */}
-            <div className="relative aspect-4/3 w-full">
-              <img
-                src="/img/img1.jpg"
-                alt="Dr. Erick O. Encampira Luna"
-                className="rounded-lg object-cover w-full h-full"
-              />
-            </div>
-          </div>
-        </section>
 
         {/* Frase MMDRA */}
         <section className="mt-12 bg-gradient-to-r from-[#2D3339] to-gray-800 text-white p-8 md:p-12 text-center">
@@ -149,6 +154,9 @@ export default function Home() {
         </section>
         <section>
           <VideoSection/>
+        </section>
+        <section>
+          <Mockup/>
         </section>
 
 

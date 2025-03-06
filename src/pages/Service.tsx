@@ -1,45 +1,49 @@
-import ServiceCard from "@/components/Service-card";
 import Sidebar from "../components/Sidebar";
+import { Link } from "react-router-dom"; // Asegúrate de importar Link si usas React Router
+import { Eye } from "lucide-react"; // Importa el icono de ojo
 
 const services = [
   {
-    title: "Enfermedades tratadas",
-    subtitle: "Tumores",
+    title: "Ojo Seco",
+    subtitle: "Síndrome",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum, accusamus sint, hic molestiae ex labore officiis nam doloremque quam pariatur, iste ad. Sit, dolorem ipsam atque totam ab explicabo.",
-    iconSrc: "/icons/heart-pulse.svg", // Ruta relativa desde la carpeta public
-    path: "/service",
+      "El síndrome del ojo seco es una enfermedad crónica y suele ser progresiva. Ofrecemos diagnósticos precisos y tratamientos personalizados para aliviar los síntomas y mejorar la calidad de vida.",
+    iconSrc: "/img/img5.jpeg",
+    path: "/service1",
   },
   {
-    title: "Degeneración macular relacionada con la edad (AMD)",
-    subtitle: "Tratamientos",
+    title: "Astigmatismo",
+    subtitle: "Tratamiento",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum, accusamus sint, hic molestiae ex labore officiis nam doloremque quam pariatur, iste ad. Sit, dolorem ipsam atque totam ab explicabo.",
-    iconSrc: "/icons/eye.svg", // Ruta relativa desde la carpeta public
-    path: "/service",
+      "El astigmatismo es un error refractivo que provoca visión borrosa debido a la forma irregular de la córnea. Ofrecemos soluciones como lentes correctivos y cirugías refractivas para corregirlo.",
+    iconSrc: "/img/img4.webp",
+    path: "/service2",
   },
   {
-    title: "Glaucoma",
+    title: "Miopía",
     subtitle: "Tratamientos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum, accusamus sint, hic molestiae ex labore officiis nam doloremque quam pariatur, iste ad. Sit, dolorem ipsam atque totam ab explicabo.",
-    iconSrc: "/icons/activity.svg", // Ruta relativa desde la carpeta public
-    path: "/service",
+      "La miopía es un trastorno común de la visión en el que los objetos cercanos se ven claros, pero los lejanos aparecen borrosos. Ofrecemos exámenes tempranos, corrección visual y cirugías avanzadas como LASIK.",
+    iconSrc: "/img/img7.jpg",
+    path: "/service3",
   },
-  // Agrega más servicios aquí si es necesario
+  {
+    title: "Cataratas",
+    subtitle: "Tratamientos",
+    description:
+      "Las cataratas son una condición ocular que causa la opacidad del cristalino, provocando visión borrosa. Ofrecemos diagnósticos tempranos y cirugías seguras para restaurar la visión.",
+    iconSrc: "/img/img6.webp",
+    path: "/service4",
+  },
 ];
 
 const otherServices = [
-  { name: "Síndrome del ojo seco", iconSrc: "/icons/droplets.svg" },
-  { name: "Retinopatía diabética", iconSrc: "/icons/cross.svg" },
-  { name: "Ojo rojo", iconSrc: "/icons/eye.svg" },
-  { name: "Desprendimiento de retina", iconSrc: "/icons/eye-off.svg" },
-  { name: "Estrabismo convergente (ojos bizcos)", iconSrc: "/icons/glasses.svg" },
-  { name: "Cataratas", iconSrc: "/icons/sun.svg" },
-  { name: "Miopía", iconSrc: "/icons/eye.svg" },
-  { name: "Astigmatismo", iconSrc: "/icons/glasses.svg" },
-  { name: "Conjuntivitis", iconSrc: "/icons/eye.svg" },
-  { name: "Pterigión", iconSrc: "/icons/zap.svg" },
+  { name: "Retinopatía diabética" },
+  { name: "Ojo rojo" },
+  { name: "Desprendimiento de retina" },
+  { name: "Estrabismo convergente (ojos bizcos)" },
+  { name: "Conjuntivitis" },
+  { name: "Pterigión" },
 ];
 
 export default function ServicesPage() {
@@ -54,7 +58,29 @@ export default function ServicesPage() {
           </h1>
           <div className="divide-y divide-gray-200">
             {services.map((service, index) => (
-              <ServiceCard key={index} {...service} />
+              <div key={index} className="flex items-center py-6 space-x-4">
+                {/* Icono del servicio */}
+                <img
+                  src={service.iconSrc}
+                  alt={`${service.title} icon`}
+                  className="h-12 w-12 object-cover rounded-full bg-gray-100 p-2"
+                />
+                {/* Contenido del servicio */}
+                <div className="flex-1">
+                  <h2 className="text-xl font-semibold text-[#2D3339]">
+                    {service.title}
+                  </h2>
+                  <p className="text-sm text-gray-600">{service.subtitle}</p>
+                  <p className="mt-2 text-gray-700">{service.description}</p>
+                </div>
+                {/* Botón para redirigir */}
+                <Link
+                  to={service.path}
+                  className="bg-[#2D3339] text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+                >
+                  Ver más
+                </Link>
+              </div>
             ))}
           </div>
 
@@ -69,11 +95,7 @@ export default function ServicesPage() {
                   key={index}
                   className="flex items-center text-gray-700 hover:text-gray-900 transition-colors"
                 >
-                  <img
-                    src={service.iconSrc}
-                    alt={service.name}
-                    className="h-5 w-5 mr-2"
-                  />
+                  <Eye className="h-5 w-5 mr-2 text-gray-600" /> {/* Icono agregado aquí */}
                   {service.name}
                 </li>
               ))}

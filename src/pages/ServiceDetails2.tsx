@@ -2,34 +2,34 @@ import Sidebar from "../components/Sidebar";
 
 export default function ServiceDetails() {
   const service = {
-    title: "Síndrome del ojo seco",
-    subtitle: "Tratamientos y manejo avanzado",
-    description: "El síndrome del ojo seco es una enfermedad crónica y suele ser progresiva. Generalmente, el ojo seco se produce por un déficit de lágrima (escasa producción o excesiva evaporación) o porque esta es de mala calidad debido a problemas como la disfunción de las glándulas de Meibomio o la blefaritis. Además, suele ir asociado a diferentes grados de inflamación.",
+    title: "Astigmatismo",
+    subtitle: "Corrección y manejo visual avanzado",
+    description: "El astigmatismo es una condición ocular común que ocurre cuando la córnea o el cristalino tienen una forma irregular, lo que provoca una visión borrosa o distorsionada tanto de cerca como de lejos. Esta condición puede corregirse con anteojos, lentes de contacto o cirugía refractiva.",
     iconSrc: "/img/img4.webp",
     details: [
-      "Diagnóstico temprano mediante pruebas especializadas.",
-      "Tratamientos no invasivos con tecnología de punta.",
-      "Seguimiento personalizado para evitar progresión de la enfermedad.",
-      "Uso de lágrimas artificiales y otros productos lubricantes.",
+      "Evaluación completa de la salud ocular mediante exámenes especializados.",
+      "Prescripción de anteojos o lentes de contacto personalizados.",
+      "Opciones de cirugía refractiva para corrección permanente.",
+      "Seguimiento regular para ajustar tratamientos según sea necesario.",
     ],
   };
 
   const faqs = [
     {
-      question: "¿Qué es el síndrome del ojo seco?",
-      answer: "El síndrome del ojo seco es una condición en la que los ojos no producen suficientes lágrimas o estas son de mala calidad, lo que resulta en sequedad, irritación y otros síntomas.",
+      question: "¿Qué es el astigmatismo?",
+      answer: "El astigmatismo es una condición en la que la córnea o el cristalino tienen una forma irregular, lo que provoca una visión borrosa o distorsionada tanto de cerca como de lejos.",
     },
     {
-      question: "¿Cuáles son los síntomas del ojo seco?",
-      answer: "Los síntomas incluyen ardor o comezón en los ojos, enrojecimiento, sensación de cuerpo extraño, intolerancia al uso de lentes de contacto, visión borrosa y mayor sensibilidad a la luz.",
+      question: "¿Cuáles son los síntomas del astigmatismo?",
+      answer: "Los síntomas incluyen visión borrosa, dolor de cabeza, fatiga ocular, dificultad para ver de noche y necesidad de entrecerrar los ojos para enfocar mejor.",
     },
     {
-      question: "¿Cómo se diagnostica el ojo seco?",
-      answer: "El diagnóstico se realiza mediante un examen ocular exhaustivo, pruebas para medir el volumen y la calidad de las lágrimas, prueba de osmolaridad lagrimal y muestras de lágrimas para buscar marcadores.",
+      question: "¿Cómo se diagnostica el astigmatismo?",
+      answer: "El diagnóstico se realiza mediante un examen ocular completo, que incluye pruebas de agudeza visual, queratometría y topografía corneal.",
     },
     {
-      question: "¿Cómo se trata el ojo seco?",
-      answer: "El tratamiento puede incluir el uso de lágrimas artificiales, geles, ungüentos y otros productos lubricantes. En casos más severos, se pueden recomendar tratamientos médicos específicos.",
+      question: "¿Cómo se corrige el astigmatismo?",
+      answer: "El astigmatismo puede corregirse con anteojos o lentes de contacto especiales. En algunos casos, también se puede optar por cirugía refractiva como LASIK o PRK.",
     },
   ];
 
@@ -43,7 +43,7 @@ export default function ServiceDetails() {
             <div className="flex flex-col md:flex-row items-center gap-8 p-8 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl">
               <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
                 <img 
-                  src="/img/img5.jpeg" 
+                  src="/img/img4.webp" // Actualiza la imagen si es necesario
                   alt={service.title}
                   className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
                 />
@@ -77,12 +77,12 @@ export default function ServiceDetails() {
           {/* Sección de video destacado */}
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-[#2D3339] mb-6">
-              Video informativo sobre el síndrome del ojo seco
+              Video informativo sobre el astigmatismo
             </h2>
             <div className="flex justify-center">
-              <div className="w-full max-w-[267px] md:max-w-[400px] lg:max-w-[500px]">
+              <div className="w-full max-w-[269px] md:max-w-[400px] lg:max-w-[500px]">
                 <iframe
-                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F412562390854712%2F&show_text=false&width=267&t=0"
+                  src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F684890379320943%2F&show_text=false&width=269&t=0"
                   width="100%"
                   height="800"
                   style={{ border: "none", overflow: "hidden" }}
@@ -93,9 +93,7 @@ export default function ServiceDetails() {
                 ></iframe>
               </div>
             </div>
-        
           </section>
-
 
           {/* Preguntas frecuentes */}
           <section className="mb-12">
