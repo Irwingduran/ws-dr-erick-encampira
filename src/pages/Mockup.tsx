@@ -23,7 +23,7 @@ const Mockup: React.FC<MockupProps> = ({ imageUrl, title, description, buttonTex
             <h2 className="text-4xl font-semibold text-gray-800 mb-5">{title}</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">{description}</p>
             <a
-              href="https://www.findoctor.com.mx/doctores/omar-espinosa-gonzalez"
+              href="https://www.findoctor.com.mx/doctores/erick-o-encampira-luna"
               target="_blank"
               rel="noopener noreferrer"
             >

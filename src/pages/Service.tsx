@@ -6,33 +6,25 @@ const services = [
   {
     title: "Ojo Seco",
     subtitle: "Síndrome",
-    description:
-      "El síndrome del ojo seco es una enfermedad crónica y suele ser progresiva. Ofrecemos diagnósticos precisos y tratamientos personalizados para aliviar los síntomas y mejorar la calidad de vida.",
-    iconSrc: "/img/img5.jpeg",
+    iconSrc: "/img/service1.jpeg",
     path: "/service1",
   },
   {
     title: "Astigmatismo",
     subtitle: "Tratamiento",
-    description:
-      "El astigmatismo es un error refractivo que provoca visión borrosa debido a la forma irregular de la córnea. Ofrecemos soluciones como lentes correctivos y cirugías refractivas para corregirlo.",
-    iconSrc: "/img/img4.webp",
+    iconSrc: "/img/service2.jpeg",
     path: "/service2",
   },
   {
     title: "Miopía",
     subtitle: "Tratamientos",
-    description:
-      "La miopía es un trastorno común de la visión en el que los objetos cercanos se ven claros, pero los lejanos aparecen borrosos. Ofrecemos exámenes tempranos, corrección visual y cirugías avanzadas como LASIK.",
-    iconSrc: "/img/img7.jpg",
+    iconSrc: "/img/service3.jpeg",
     path: "/service3",
   },
   {
     title: "Cataratas",
     subtitle: "Tratamientos",
-    description:
-      "Las cataratas son una condición ocular que causa la opacidad del cristalino, provocando visión borrosa. Ofrecemos diagnósticos tempranos y cirugías seguras para restaurar la visión.",
-    iconSrc: "/img/img6.webp",
+    iconSrc: "/img/service4.jpeg",
     path: "/service4",
   },
 ];
@@ -63,7 +55,7 @@ export default function ServicesPage() {
                 <img
                   src={service.iconSrc}
                   alt={`${service.title} icon`}
-                  className="h-12 w-12 object-cover rounded-full bg-gray-100 p-2"
+                  className="h-20 w-20 object-cover rounded-full bg-gray-100 p-2"
                 />
                 {/* Contenido del servicio */}
                 <div className="flex-1">
@@ -71,7 +63,6 @@ export default function ServicesPage() {
                     {service.title}
                   </h2>
                   <p className="text-sm text-gray-600">{service.subtitle}</p>
-                  <p className="mt-2 text-gray-700">{service.description}</p>
                 </div>
                 {/* Botón para redirigir */}
                 <Link

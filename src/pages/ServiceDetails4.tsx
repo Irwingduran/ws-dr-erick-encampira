@@ -11,7 +11,7 @@ export default function ServiceDetails() {
     subtitle: "Detección y tratamiento avanzado",
     description:
       "Las cataratas se forman cuando las proteínas del cristalino del ojo se agrupan, causando que este se nuble y afecte la visión. La mayoría de las cataratas se desarrollan lentamente, pero con el tiempo pueden interferir significativamente en la calidad de vida. Ofrecemos diagnósticos precisos y tratamientos modernos, incluyendo cirugía láser y facoemulsificación.",
-    iconSrc: "/img/img7.jpg",
+    iconSrc: "/img/service4.jpeg",
     details: [
       "Examen de agudeza visual para evaluar la visión.",
       "Examen de retina y cristalino con tecnología avanzada.",
@@ -66,7 +66,7 @@ export default function ServiceDetails() {
             <div className="flex flex-col md:flex-row items-center gap-8 p-8 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl">
               <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
                 <img
-                  src="/img/img6.webp"
+                  src="/img/service4.jpeg"
                   alt={service.title}
                   className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
                 />

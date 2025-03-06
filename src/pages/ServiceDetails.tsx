@@ -5,7 +5,7 @@ export default function ServiceDetails() {
     title: "Síndrome del ojo seco",
     subtitle: "Tratamientos y manejo avanzado",
     description: "El síndrome del ojo seco es una enfermedad crónica y suele ser progresiva. Generalmente, el ojo seco se produce por un déficit de lágrima (escasa producción o excesiva evaporación) o porque esta es de mala calidad debido a problemas como la disfunción de las glándulas de Meibomio o la blefaritis. Además, suele ir asociado a diferentes grados de inflamación.",
-    iconSrc: "/img/img4.webp",
+    iconSrc: "/img/service1.jpeg",
     details: [
       "Diagnóstico temprano mediante pruebas especializadas.",
       "Tratamientos no invasivos con tecnología de punta.",
@@ -43,7 +43,7 @@ export default function ServiceDetails() {
             <div className="flex flex-col md:flex-row items-center gap-8 p-8 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl">
               <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
                 <img 
-                  src="/img/img5.jpeg" 
+                  src="/img/service1.jpeg" 
                   alt={service.title}
                   className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
                 />

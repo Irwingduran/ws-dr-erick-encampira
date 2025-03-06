@@ -5,7 +5,7 @@ export default function ServiceDetails() {
     title: "Astigmatismo",
     subtitle: "Corrección y manejo visual avanzado",
     description: "El astigmatismo es una condición ocular común que ocurre cuando la córnea o el cristalino tienen una forma irregular, lo que provoca una visión borrosa o distorsionada tanto de cerca como de lejos. Esta condición puede corregirse con anteojos, lentes de contacto o cirugía refractiva.",
-    iconSrc: "/img/img4.webp",
+    iconSrc: "/img/service2.jpeg",
     details: [
       "Evaluación completa de la salud ocular mediante exámenes especializados.",
       "Prescripción de anteojos o lentes de contacto personalizados.",
@@ -43,7 +43,7 @@ export default function ServiceDetails() {
             <div className="flex flex-col md:flex-row items-center gap-8 p-8 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl">
               <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
                 <img 
-                  src="/img/img4.webp" // Actualiza la imagen si es necesario
+                  src="/img/service2.jpeg" // Actualiza la imagen si es necesario
                   alt={service.title}
                   className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
                 />

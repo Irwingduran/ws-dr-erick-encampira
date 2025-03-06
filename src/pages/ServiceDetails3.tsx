@@ -6,7 +6,7 @@ export default function ServiceDetails() {
     subtitle: "Diagnóstico y tratamiento avanzado",
     description:
       "La miopía es un trastorno común de la visión en el que puedes ver con claridad los objetos cercanos, pero los objetos lejanos se ven borrosos. Ofrecemos exámenes de detección temprana, diagnósticos precisos y opciones de tratamiento personalizadas, incluyendo corrección con lentes, terapias y cirugías refractivas como el LASIK.",
-    iconSrc: "/img/img7.jpg.svg",
+    iconSrc: "/img/service3.jpeg",
     details: [
       "Exámenes de detección temprana para niños y adultos.",
       "Corrección visual con lentes de contacto o gafas.",
@@ -43,7 +43,7 @@ export default function ServiceDetails() {
             <div className="flex flex-col md:flex-row items-center gap-8 p-8 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl">
               <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
                 <img
-                  src="/img/img7.jpg"
+                  src="/img/service3.jpeg"
                   alt={service.title}
                   className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
                 />

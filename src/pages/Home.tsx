@@ -3,7 +3,10 @@ import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
 import VideoSection from "@/components/VideoSection";
+import Carousel from "@/components/Carousel";
 import Mockup from "./Mockup";
+import Parners from "./Partners";
+import VideoCarousel from "@/components/VideoCarousel";
 
 export default function Home() {
   return (
@@ -48,55 +51,8 @@ export default function Home() {
           </Button>
         </section>
 
-        {/* Sección Informativa */}
-        <section className="mt-12 bg-gray-100 rounded-lg shadow-lg p-6 md:p-10">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Texto */}
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-[#2D3339]">
-                Soy el Dr. Erick O. Encampira Luna, especialista en Oftalmología.
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Me preocupo por evaluar la situación de cada paciente en forma
-                personalizada, con la finalidad de poder hacer un diagnóstico
-                preciso y oportuno. Esto me permitirá ofrecer un tratamiento
-                adecuado a cada paciente. Lo más importante es siempre pensar en
-                lograr ofrecer la mejor calidad de vida para cada paciente.
-              </p>
-              <ul className="space-y-4 text-gray-700">
-                <li>
-                  • Miembro activo de la Sociedad Mexicana de Oftalmología, SMO,
-                  2015.
-                </li>
-                <li>
-                  • Miembro de la ESCRS, European Society of Cataract &
-                  Refractive Surgeons, 2014.
-                </li>
-                <li>
-                  • Médico Adscrito de Segmento Anterior y Catarata, APEC /
-                  Asociación para Evitar la Ceguera en México, 2015.
-                </li>
-                <li>
-                  • Especialista en Córnea, Catarata, y Cirugía refractiva,
-                  Stein Eye Institute - University of California, Los Angeles
-                  (UCLA), 2018.
-                </li>
-              </ul>
-            </div>
-
-            {/* Imagen */}
-            <div className="relative aspect-4/3 w-full">
-              <img
-                src="/img/img1.jpg"
-                alt="Dr. Erick O. Encampira Luna"
-                className="rounded-lg object-cover w-full h-full"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Sección de Citas */}
-        <section className="mt-12 bg-white rounded-lg shadow-lg p-6 md:p-10">
+          {/* Sección de Citas */}
+          <section className="mt-12 bg-white rounded-lg shadow-lg p-6 md:p-10">
           <h2 className="text-2xl font-bold text-[#2D3339] mb-6 text-center">
             Agenda tu cita de forma fácil
           </h2>
@@ -142,9 +98,64 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Sección Informativa */}
+        <section className="mt-12 bg-gray-100 rounded-lg shadow-lg p-6 md:p-10">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Texto */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold text-[#2D3339]">
+                Soy el Dr. Erick O. Encampira Luna, especialista en Oftalmología.
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Me preocupo por evaluar la situación de cada paciente en forma
+                personalizada, con la finalidad de poder hacer un diagnóstico
+                preciso y oportuno. Esto me permitirá ofrecer un tratamiento
+                adecuado a cada paciente. Lo más importante es siempre pensar en
+                lograr ofrecer la mejor calidad de vida para cada paciente.
+              </p>
+              <ul className="space-y-4 text-gray-700">
+                <li>
+                  • Miembro activo de la Sociedad Mexicana de Oftalmología, SMO,
+                  2015.
+                </li>
+                <li>
+                  • Miembro de la ESCRS, European Society of Cataract &
+                  Refractive Surgeons, 2014.
+                </li>
+                <li>
+                  • Médico Adscrito de Segmento Anterior y Catarata, APEC /
+                  Asociación para Evitar la Ceguera en México, 2015.
+                </li>
+                <li>
+                  • Especialista en Córnea, Catarata, y Cirugía refractiva,
+                  Stein Eye Institute - University of California, Los Angeles
+                  (UCLA), 2018.
+                </li>
+              </ul>
+            </div>
+
+            
+
+            {/* Imagen */}
+            <div className="relative aspect-4/3 w-full">
+              <img
+                src="/img/img1.jpg"
+                alt="Dr. Erick O. Encampira Luna"
+                className="rounded-lg object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <Carousel/>
+        </section>
+
+      
+
 
         {/* Frase MMDRA */}
-        <section className="mt-12 bg-gradient-to-r from-[#2D3339] to-gray-800 text-white p-8 md:p-12 text-center">
+        <section className="mt-12 bg-gradient-to-r from-[#1A1F2C] to-gray-800 text-white p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             "Tu salud visual es nuestra prioridad"
           </h2>
@@ -153,10 +164,15 @@ export default function Home() {
           </p>
         </section>
         <section>
-          <VideoSection/>
+          <VideoCarousel/>
         </section>
+
         <section>
           <Mockup/>
+        </section>
+        
+        <section>
+          <Parners/>
         </section>
 
 
