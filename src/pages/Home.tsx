@@ -6,6 +6,9 @@ import Carousel from "@/components/Carousel";
 import Mockup from "./Mockup";
 import Parners from "./Partners";
 import VideoCarousel from "@/components/VideoCarousel";
+import { FaEye, FaGlasses } from "react-icons/fa";
+import { MdRemoveRedEye } from "react-icons/md";
+
 
 export default function Home() {
   return (
@@ -162,6 +165,94 @@ export default function Home() {
             Confía en un equipo altamente capacitado para cuidar de tus ojos.
           </p>
         </section>
+        
+        
+        <section className="mt-12 bg-white rounded-lg shadow-lg p-6 md:p-10">
+  <h2 className="text-2xl font-bold text-[#2D3339] mb-6 text-center">
+    Nuestros Servicios
+  </h2>
+  <p className="text-center text-gray-600 mb-8">
+    Cuidamos de tu salud visual con tratamientos especializados. Descubre cómo podemos ayudarte.
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Servicio 1: Ojo Seco */}
+    <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+      <FaEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Ojo Seco</h3>
+      <p className="text-gray-600 mb-4">
+        Tratamientos especializados para el síndrome de ojo seco. Alivio y prevención de molestias.
+      </p>
+      <Button
+        variant="outline"
+        className="bg-white hover:bg-gray-100 text-[#2D3339] border-gray-300"
+        asChild
+      >
+        <Link to="/service1" className="font-medium">
+          Saber más
+        </Link>
+      </Button>
+    </div>
+
+    {/* Servicio 2: Miopía */}
+    <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+      <FaGlasses className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Miopía</h3>
+      <p className="text-gray-600 mb-4">
+        Diagnóstico y corrección de la miopía. Soluciones personalizadas para una visión clara.
+      </p>
+      <Button
+        variant="outline"
+        className="bg-white hover:bg-gray-100 text-[#2D3339] border-gray-300"
+        asChild
+      >
+        <Link to="/service3" className="font-medium">
+          Saber más
+        </Link>
+      </Button>
+    </div>
+
+    {/* Servicio 3: Astigmatismo */}
+    <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+      <MdRemoveRedEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Astigmatismo</h3>
+      <p className="text-gray-600 mb-4">
+        Corrección del astigmatismo con técnicas avanzadas. Mejora tu calidad visual.
+      </p>
+      <Button
+        variant="outline"
+        className="bg-white hover:bg-gray-100 text-[#2D3339] border-gray-300"
+        asChild
+      >
+        <Link to="/service2" className="font-medium">
+          Saber más
+        </Link>
+      </Button>
+    </div>
+  </div>
+
+  {/* Llamado a la acción */}
+  <div className="mt-10 text-center">
+    <h3 className="text-xl font-semibold text-[#2D3339] mb-4">
+      ¿Necesitas más información?
+    </h3>
+    <p className="text-gray-600 mb-6">
+      Explora todos nuestros servicios y encuentra el que mejor se adapte a tus necesidades.
+    </p>
+    <Button
+  
+      className="bg-[#2D3339] text-white hover:bg-[#1a1d20] py-3 px-8 rounded-lg font-medium"
+      asChild
+    >
+      <Link to="/services">
+        Ver todos los servicios
+      </Link>
+    </Button>
+  </div>
+</section>
+
+
+
         <section>
           <VideoCarousel/>
         </section>

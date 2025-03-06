@@ -60,8 +60,8 @@ export default function Resenas() {
           <ChevronLeft className="h-6 w-6 text-gray-700" />
         </button>
         <div className="w-full md:w-3/5 text-center space-y-4">
-          <div className="w-20 h-20 mx-auto rounded-full bg-gray-100 flex items-center justify-center border-2 border-[#2D3339]">
-            <User className="h-10 w-10 text-[#2D3339]" />
+          <div className="w-20 h-20 mx-auto rounded-full  flex items-center justify-center border-2 border-[#2D3339]">
+            <img src="/logo.png" className="h-10 w-10 text-[#2D3339]" />
           </div>
           <div className="flex justify-center">
             {[...Array(reviews[currentIndex].rating)].map((_, i) => (
@@ -98,10 +98,7 @@ export default function Resenas() {
 
     <section>
     <div className="max-w-4xl mx-auto py-10">
-      <h2 className="text-3xl font-bold text-center mb-4">Galería de Videos</h2>
-      <p className="text-center text-gray-600 mb-6">
-        Explora nuestra colección de videos destacados.
-      </p>
+      <h2 className="text-3xl font-bold text-center mb-4">Esto es lo que opinan algunos de nuestros pacientes</h2>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
