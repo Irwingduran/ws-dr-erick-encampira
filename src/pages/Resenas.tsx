@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Star, User } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
