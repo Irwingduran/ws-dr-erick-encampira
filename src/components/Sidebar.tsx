@@ -66,7 +66,7 @@ export default function Sidebar() {
         </div>
 
         <div className="p-8">
-          <Link to="https://api.whatsapp.com/send/?phone=5217222429505&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0">
+          <Link to="https://api.whatsapp.com/send/?phone=5217222429505&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0">
             <button className="w-full py-3 bg-yellow-400 text-black font-bold rounded-md hover:bg-yellow-300 transition">
               Agendar Cita
             </button>

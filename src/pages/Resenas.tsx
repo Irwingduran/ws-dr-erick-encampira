@@ -1,21 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
-const videos = [
-"  https://www.facebook.com/reel/1211440006137039",
-"https://www.facebook.com/reel/712082156485104",
-"https://www.facebook.com/reel/2445806978890436",
-"https://www.facebook.com/reel/3474383282703101",
-"https://www.facebook.com/reel/775397363753179",
-"https://www.facebook.com/reel/2729937587143097",
-"https://www.facebook.com/reel/480156900630149",
-"https://www.facebook.com/reel/765901711347719",
-];
+
 const reviews = [
   {
     name: "María López",
@@ -94,38 +80,6 @@ export default function Resenas() {
           Dejar un comentario
         </a>
       </div>
-    </section>
-
-    <section>
-    <div className="max-w-4xl mx-auto py-10">
-      <h2 className="text-3xl font-bold text-center mb-4">Esto es lo que opinan algunos de nuestros pacientes</h2>
-      <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        spaceBetween={20}
-        slidesPerView={1}
-        className="w-full"
-      >
-        {videos.map((video, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex justify-center">
-              <iframe
-                src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(video)}&show_text=false`}
-                width="400"
-                height="700"
-                className="rounded-lg shadow-lg"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-
-
-
-
     </section>
     </main>
     </div>
