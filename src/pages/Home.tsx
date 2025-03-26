@@ -270,7 +270,7 @@ export default function Home() {
     </p>
     <Button
   
-      className="bg-[#2D3339] text-white hover:bg-[#1a1d20] py-3 px-8 rounded-lg font-medium"
+      className="bg-yellow-400 text-white hover:bg-yellow-300 py-3 px-8 rounded-lg font-medium"
       asChild
     >
       <Link to="/services">
