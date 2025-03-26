@@ -112,8 +112,8 @@ export default function ServiceDetails() {
 
           {/* Botón de acción */}
           <section className="text-center">
-            <a href="https://api.whatsapp.com/send/?phone=5217222429505&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" target="_blank">
-              <button className="bg-[#2D3339] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#4A5568] transition">
+            <a href="https://api.whatsapp.com/send/?phone=5217222429505&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" target="_blank">
+              <button className="bg-yellow-400 text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#4A5568] transition">
                 Agendar cita por WhatsApp
               </button>
             </a>

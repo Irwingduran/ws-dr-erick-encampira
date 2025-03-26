@@ -66,7 +66,7 @@ export default function Home() {
      </section>
 
         {/* Sección de Bienvenida */}
-        <section className="bg-[#1A1F2C] text-white shadow-lg p-8 md:p-12 text-center">
+        <section className="bg-[#004475] text-white shadow-lg p-8 md:p-12 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Bienvenido a la consulta del Dr. Erick O. Encampira Luna
           </h1>
@@ -186,7 +186,7 @@ export default function Home() {
 
 
         {/* Frase MMDRA */}
-        <section className="mt-12 bg-gradient-to-r from-[#1A1F2C] to-gray-800 text-white p-8 md:p-12 text-center">
+        <section className="mt-12 bg-[#004475] text-white p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             "Tu salud visual es nuestra prioridad"
           </h2>
@@ -315,7 +315,7 @@ export default function Home() {
                  <ChevronRight className="h-6 w-6 text-gray-700" />
                </button>
              </div>
-             <div className="mt-8 bg-[#2D3339] p-6 rounded-lg text-center">
+             <div className="mt-8 bg-[#004475] p-6 rounded-lg text-center">
                <h3 className="text-xl font-bold text-white mb-4">
                  ¡Tu opinión es importante para nosotros!
                </h3>

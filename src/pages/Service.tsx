@@ -67,7 +67,7 @@ export default function ServicesPage() {
                 {/* Botón para redirigir */}
                 <Link
                   to={service.path}
-                  className="bg-[#2D3339] text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+                  className="bg-[#004475] text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
                 >
                   Ver más
                 </Link>

@@ -8,7 +8,7 @@ export default function Sidebar() {
   return (
     <>
       <button
-        className="fixed top-4 right-4 z-50 text-white bg-gray-800 p-2 rounded-md md:hidden"
+        className="fixed top-4 right-4 z-50 text-white bg-[#004475] p-2 rounded-md md:hidden"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
@@ -16,7 +16,7 @@ export default function Sidebar() {
       </button>
 
       <aside
-        className={`fixed left-0 top-0 h-full w-full md:w-[320px] bg-[#1A1F2C] text-white flex flex-col z-40 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed left-0 top-0 h-full w-full md:w-[320px] bg-[#004475] text-white flex flex-col z-40 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0`}
       >

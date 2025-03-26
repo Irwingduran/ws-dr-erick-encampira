@@ -64,7 +64,7 @@ export default function Resenas() {
           <ChevronRight className="h-6 w-6 text-gray-700" />
         </button>
       </div>
-      <div className="mt-8 bg-[#2D3339] p-6 rounded-lg text-center">
+      <div className="mt-8 bg-[#004475] p-6 rounded-lg text-center">
         <h3 className="text-xl font-bold text-white mb-4">
           ¡Tu opinión es importante para nosotros!
         </h3>
