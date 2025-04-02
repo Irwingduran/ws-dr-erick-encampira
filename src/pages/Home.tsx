@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
-import ScrollToTop from "../components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop";
 import Carousel from "@/components/Carousel";
 import Mockup from "./Mockup";
 import Parners from "./Partners";
