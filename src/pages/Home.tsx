@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, PhoneIcon as WhatsApp } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Sidebar from "../components/Sidebar";
+import ScrollToTop from "../components/ScrollToTop";
 import Carousel from "@/components/Carousel";
 import Mockup from "./Mockup";
 import Parners from "./Partners";
@@ -42,6 +43,7 @@ export default function Home() {
   
   return (
     <div className="min-h-screen bg-gray-50">
+      <ScrollToTop />
       <Sidebar />
       <main className="md:ml-[320px]">
       {/* Imagen de Fondo */}
