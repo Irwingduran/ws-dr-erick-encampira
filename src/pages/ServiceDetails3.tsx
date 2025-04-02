@@ -1,4 +1,5 @@
 import Sidebar from "../components/Sidebar";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function ServiceDetails() {
   const service = {
@@ -35,6 +36,7 @@ export default function ServiceDetails() {
 
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop/>
       <Sidebar />
       <main className="md:ml-[320px] p-4 md:p-12">
         <div className="max-w-4xl mx-auto">
