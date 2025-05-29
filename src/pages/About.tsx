@@ -76,7 +76,7 @@ export default function About() {
           </section>
 
           {/* Llamada a la Acción */}
-          <section className="bg-[#004475] text-white rounded-lg p-8 text-center">
+          <section className="bg-[#1E2348] text-white rounded-lg p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Contáctame
             </h2>

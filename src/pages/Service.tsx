@@ -36,6 +36,10 @@ const otherServices = [
   { name: "Estrabismo convergente (ojos bizcos)" },
   { name: "Conjuntivitis" },
   { name: "Pterigión" },
+  { name: "Queratocono"},
+  { name: "Trasplante de córnea"},
+  { name: "Glaucoma" },
+
 ];
 
 export default function ServicesPage() {
@@ -67,7 +71,7 @@ export default function ServicesPage() {
                 {/* Botón para redirigir */}
                 <Link
                   to={service.path}
-                  className="bg-[#004475] text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+                  className="bg-[#1E2348] text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
                 >
                   Ver más
                 </Link>

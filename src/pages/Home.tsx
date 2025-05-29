@@ -28,6 +28,66 @@ const reviews = [
     comment: "El diagnóstico fue preciso y el tratamiento efectivo. El mejor oftalmólogo que he conocido.",
     rating: 5,
   },
+  {
+    name: "Aidee Jiménez Reyes",
+    comment:"Yo llegue muy mal con presión ocular de entre 34 y 36, 3 antibióticos, 1 lubricante, con 5 bolitas en el ojo, una operación mal hecha y casi ciega. El doctor me propuso un nuevo tratamiento, vi resultados después de 3 sesiones y hoy después de 3 años mis ojos están sanos.",
+    rating: 5,
+  },
+  {
+    name: "Jazmín Betzabé",
+    comment:"Estoy contenta con los resultados de mi cirugía Femtolasik, los cuales noté desde el primer día. También me siento agradecida con el Dr. Encampira y su equipo de trabajo, quienes me acompañaron durante todo el proceso con profesionalismo y atención.",
+    rating: 5,
+  },
+  {
+    name: "Alicia Ramos",
+    comment:"Excelente atención por parte del Dr. Erick Encampira, mi cirugía fue implante de lentes intraoculares en ambos ojos el procedimiento fue un éxito, con excelentes resultados. Continúo con mi tratamiento satisfactoriamente de los mejores Doctores de la zona. Las instalaciones del consultorio como de la clínica de cirugías son de alta vanguardia; con instrumentales de primera generación, la atención del personal es excelente muy amables, altamente capacitados. En general lo recomiendo ampliamente es un excelente doctor con excelente resultados.",
+    rating: 5,
+  },
+  {
+    name: "Janet Vivero",
+    comment:"Excelente Oftalmólogo, Dios lo bendiga por sus conocimientos, después de qué ningún oftalmólogo me diagnosticaba bien y al contrario, me empeoraban, el Doctor Encampira con sus conocimientos me ha dado un excelente tratamiento para el glaucoma que tengo, es atinado, explica excelente, honesto, humano y te da confianza, gracias a Dios lo encontré y no lo soltaré, lo recomiendo apliamente.",
+    rating: 5,
+  },
+  {
+    name: "Krmlyta Uribe",
+    comment:"Ampliamente recomendable el Dr. Erick Encampira, la cirugía refractiva que me realizó fue un éxito, el personal muy profesional, las instalaciones muy adecuadas a las necesidades del paciente. Desde la primera consulta te hace una valoración minuciosa y te explica detalladamente cuál es el problema ocular que tiene el paciente, durante la cirugía es muy humano y también el personal que lo ayuda, después de la cirugía y los protocolos de atención son excelentes.",
+    rating: 5,
+  },
+  {
+    name: "Sergio Pérez",
+    comment:"Todo un éxito mis lentes intraoculares derivado de una cirugía de cataratas. El cirujano y su equipo siempre al pendiente. Los estudios con equipo de alta tecnología e instalaciones súper limpias.",
+    rating: 5,
+  },
+  {
+    name: "Eduardo Sánchez",
+    comment:"Excelente servicio profesional por parte del Dr. Erick y todo su equipo de trabajo, mi esposa y yo hemos quedado satisfechos con los resultados obtenidos después de la cirugía de estrabismo.",
+    rating: 5,
+  },
+  {
+    name: "Sebastian Matías",
+    comment:"Quiero expresar mi mas profundo agradecimiento por la operación laser que me realizó.Tenia altas espectativas y usted no solo las cumplió , sino que las superó. Muchas gracias Dr Encampira y equipo.",
+    rating: 5,
+  },
+  {
+    name: "Daniela Chavez",
+    comment:"La atención es muy buena, la cirugía fue un éxito.",
+    rating: 5,
+  },
+  {
+    name: "Giovanni Palacios",
+    comment:"Todo muy bien con mi cirugía me realicé cirugía refractiva y mi visión está al 100, recomiendo mucho al Dr Erick mucha atención y explica totalmente el proceso a realizar, siempre atento a todo.",
+    rating: 5,
+  },
+  {
+    name: "Gabbi Beltran",
+    comment:"Muy buenos resultados de la cirugía de cataratas. La atención del médico y de todo el personal que lo asiste es inmejorable. Muy atento y claro.",
+    rating: 5,
+  },
+  {
+    name: "Claudia Cruz Alcantara",
+    comment:"Excelente servicio, son muy profesionales. Me realicé cirugía Femtolasik y todo salió súper bien. Mi visión ha mejorado.",
+    rating: 5,
+  },
 ];
 
 export default function Home() {
@@ -63,12 +123,24 @@ export default function Home() {
   Córnea
 
         </p>
+        <div className="p-6">
+          <Link
+            to="https://api.whatsapp.com/send/?phone=5217222429505&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="w-[200px] py-3 bg-yellow-400 text-black font-semibold rounded-md hover:bg-yellow-300 transition-colors text-sm">
+              Agendar Cita
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
+    
      </section>
 
         {/* Sección de Bienvenida */}
-        <section className="bg-[#004475] text-white shadow-lg p-8 md:p-12 text-center">
+        <section className="bg-[#1E2348] text-white shadow-lg p-8 md:p-12 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Bienvenido a la consulta del Dr. Erick O. Encampira Luna
           </h1>
@@ -188,7 +260,7 @@ export default function Home() {
 
 
         {/* Frase MMDRA */}
-        <section className="mt-12 bg-[#004475] text-white p-8 md:p-12 text-center">
+        <section className="mt-12 bg-[#1E2348] text-white p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             "Tu salud visual es nuestra prioridad"
           </h2>
@@ -206,7 +278,7 @@ export default function Home() {
     Cuidamos de tu salud visual con tratamientos especializados. Descubre cómo podemos ayudarte.
   </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div className="grid grid-cols-4 md:grid-cols-2 gap-6">
     {/* Servicio 1: Ojo Seco */}
     <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
       <FaEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
@@ -256,6 +328,24 @@ export default function Home() {
         asChild
       >
         <Link to="/service2" className="font-medium">
+          Saber más
+        </Link>
+      </Button>
+    </div>
+
+     {/* Servicio 4: Cataratas */}
+     <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
+      <MdRemoveRedEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Cataratas</h3>
+      <p className="text-gray-600 mb-4">
+        Diagnóstico y tratamiento de cataratas. Mejora tu calidad visual con cirugía láser.
+      </p>
+      <Button
+        variant="outline"
+        className="bg-white hover:bg-gray-100 text-[#2D3339] border-gray-300"
+        asChild
+      >
+        <Link to="/service4" className="font-medium">
           Saber más
         </Link>
       </Button>
@@ -317,7 +407,7 @@ export default function Home() {
                  <ChevronRight className="h-6 w-6 text-gray-700" />
                </button>
              </div>
-             <div className="mt-8 bg-[#004475] p-6 rounded-lg text-center">
+             <div className="mt-8 bg-[#1E2348] p-6 rounded-lg text-center">
                <h3 className="text-xl font-bold text-white mb-4">
                  ¡Tu opinión es importante para nosotros!
                </h3>

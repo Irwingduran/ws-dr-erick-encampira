@@ -18,7 +18,69 @@ const reviews = [
     comment: "El diagnóstico fue preciso y el tratamiento efectivo. El mejor oftalmólogo que he conocido.",
     rating: 5,
   },
+  {
+    name: "Aidee Jiménez Reyes",
+    comment:"Yo llegue muy mal con presión ocular de entre 34 y 36, 3 antibióticos, 1 lubricante, con 5 bolitas en el ojo, una operación mal hecha y casi ciega. El doctor me propuso un nuevo tratamiento, vi resultados después de 3 sesiones y hoy después de 3 años mis ojos están sanos.",
+    rating: 5,
+  },
+  {
+    name: "Jazmín Betzabé",
+    comment:"Estoy contenta con los resultados de mi cirugía Femtolasik, los cuales noté desde el primer día. También me siento agradecida con el Dr. Encampira y su equipo de trabajo, quienes me acompañaron durante todo el proceso con profesionalismo y atención.",
+    rating: 5,
+  },
+  {
+    name: "Alicia Ramos",
+    comment:"Excelente atención por parte del Dr. Erick Encampira, mi cirugía fue implante de lentes intraoculares en ambos ojos el procedimiento fue un éxito, con excelentes resultados. Continúo con mi tratamiento satisfactoriamente de los mejores Doctores de la zona. Las instalaciones del consultorio como de la clínica de cirugías son de alta vanguardia; con instrumentales de primera generación, la atención del personal es excelente muy amables, altamente capacitados. En general lo recomiendo ampliamente es un excelente doctor con excelente resultados.",
+    rating: 5,
+  },
+  {
+    name: "Janet Vivero",
+    comment:"Excelente Oftalmólogo, Dios lo bendiga por sus conocimientos, después de qué ningún oftalmólogo me diagnosticaba bien y al contrario, me empeoraban, el Doctor Encampira con sus conocimientos me ha dado un excelente tratamiento para el glaucoma que tengo, es atinado, explica excelente, honesto, humano y te da confianza, gracias a Dios lo encontré y no lo soltaré, lo recomiendo apliamente.",
+    rating: 5,
+  },
+  {
+    name: "Krmlyta Uribe",
+    comment:"Ampliamente recomendable el Dr. Erick Encampira, la cirugía refractiva que me realizó fue un éxito, el personal muy profesional, las instalaciones muy adecuadas a las necesidades del paciente. Desde la primera consulta te hace una valoración minuciosa y te explica detalladamente cuál es el problema ocular que tiene el paciente, durante la cirugía es muy humano y también el personal que lo ayuda, después de la cirugía y los protocolos de atención son excelentes.",
+    rating: 5,
+  },
+  {
+    name: "Sergio Pérez",
+    comment:"Todo un éxito mis lentes intraoculares derivado de una cirugía de cataratas. El cirujano y su equipo siempre al pendiente. Los estudios con equipo de alta tecnología e instalaciones súper limpias.",
+    rating: 5,
+  },
+  {
+    name: "Eduardo Sánchez",
+    comment:"Excelente servicio profesional por parte del Dr. Erick y todo su equipo de trabajo, mi esposa y yo hemos quedado satisfechos con los resultados obtenidos después de la cirugía de estrabismo.",
+    rating: 5,
+  },
+  {
+    name: "Sebastian Matías",
+    comment:"Quiero expresar mi mas profundo agradecimiento por la operación laser que me realizó.Tenia altas espectativas y usted no solo las cumplió , sino que las superó. Muchas gracias Dr Encampira y equipo.",
+    rating: 5,
+  },
+  {
+    name: "Daniela Chavez",
+    comment:"La atención es muy buena, la cirugía fue un éxito.",
+    rating: 5,
+  },
+  {
+    name: "Giovanni Palacios",
+    comment:"Todo muy bien con mi cirugía me realicé cirugía refractiva y mi visión está al 100, recomiendo mucho al Dr Erick mucha atención y explica totalmente el proceso a realizar, siempre atento a todo.",
+    rating: 5,
+  },
+  {
+    name: "Gabbi Beltran",
+    comment:"Muy buenos resultados de la cirugía de cataratas. La atención del médico y de todo el personal que lo asiste es inmejorable. Muy atento y claro.",
+    rating: 5,
+  },
+  {
+    name: "Claudia Cruz Alcantara",
+    comment:"Excelente servicio, son muy profesionales. Me realicé cirugía Femtolasik y todo salió súper bien. Mi visión ha mejorado.",
+    rating: 5,
+  },
 ];
+
+
 
 export default function Resenas() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +126,7 @@ export default function Resenas() {
           <ChevronRight className="h-6 w-6 text-gray-700" />
         </button>
       </div>
-      <div className="mt-8 bg-[#004475] p-6 rounded-lg text-center">
+      <div className="mt-8 bg-[#1E2348] p-6 rounded-lg text-center">
         <h3 className="text-xl font-bold text-white mb-4">
           ¡Tu opinión es importante para nosotros!
         </h3>
