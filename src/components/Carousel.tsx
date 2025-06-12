@@ -4,6 +4,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const images = [
   "/img/slide1.jpg",
   "/img/slide2.jpg",
+  "/img/slide3.jpg",
+  "/img/slide4.jpg",
+  "/img/slide5.jpg",
+  "/img/slide6.jpg",
+  "/img/slide7.jpg",
+  "/img/slide8.jpg",
+  "/img/slide9.jpg",
+  "/img/slide10.jpg",
 ];
 
 const Carousel = () => {

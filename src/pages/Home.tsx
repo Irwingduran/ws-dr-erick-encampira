@@ -10,8 +10,21 @@ import VideoCarousel from "@/components/VideoCarousel";
 import { FaEye, FaGlasses } from "react-icons/fa";
 import { MdRemoveRedEye } from "react-icons/md";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star, Eye } from "lucide-react";
 
+
+const otherServices = [
+  { name: "Retinopatía diabética" },
+  { name: "Ojo rojo" },
+  { name: "Desprendimiento de retina" },
+  { name: "Estrabismo convergente (ojos bizcos)" },
+  { name: "Conjuntivitis" },
+  { name: "Pterigión" },
+  { name: "Queratocono"},
+  { name: "Trasplante de córnea"},
+  { name: "Glaucoma" },
+
+]; 
 const reviews = [
   {
     name: "María López",
@@ -351,6 +364,24 @@ export default function Home() {
       </Button>
     </div>
   </div>
+
+     {/* Otros Servicios */}
+     <div className="mt-12">
+            <h2 className="text-2xl md:text-3xl text-[#2D3339] mb-4">
+              Otros Servicios
+            </h2>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {otherServices.map((service, index) => (
+                <li
+                  key={index}
+                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors"
+                >
+                  <Eye className="h-5 w-5 mr-2 text-gray-600" /> {/* Icono agregado aquí */}
+                  {service.name}
+                </li>
+              ))}
+            </ul>
+          </div>
 
   {/* Llamado a la acción */}
   <div className="mt-10 text-center">
