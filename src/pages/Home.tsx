@@ -225,34 +225,31 @@ export default function Home() {
                 Soy el Dr. Erick O. Encampira Luna, especialista en Oftalmología.
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Me preocupo por evaluar la situación de cada paciente en forma
-                personalizada, con la finalidad de poder hacer un diagnóstico
-                preciso y oportuno. Esto me permitirá ofrecer un tratamiento
-                adecuado a cada paciente. Lo más importante es siempre pensar en
-                lograr ofrecer la mejor calidad de vida para cada paciente.
+                Mi compromiso es brindarte una atención personalizada, escuchando y evaluando con detalle tu situación para lograr un diagnóstico preciso y oportuno. Esto me permite ofrecerte el tratamiento más adecuado para tu caso particular. Mi prioridad es cuidar tu salud visual y ayudarte a mantener la mejor calidad de vida posible.
               </p>
-              <ul className="space-y-4 text-gray-700">
-                <li>
-                  • Miembro activo de la Sociedad Mexicana de Oftalmología, SMO,
-                  2015.
-                </li>
-                <li>
-                  • Miembro de la ESCRS, European Society of Cataract &
-                  Refractive Surgeons, 2014.
-                </li>
-                <li>
-                  • Médico Adscrito de Segmento Anterior y Catarata, APEC /
-                  Asociación para Evitar la Ceguera en México, 2015.
-                </li>
-                <li>
-                  • Especialista en Córnea, Catarata, y Cirugía refractiva,
-                  Stein Eye Institute - University of California, Los Angeles
-                  (UCLA), 2018.
-                </li>
-              </ul>
-            </div>
+              
+              <div>
+                <h3 className="font-semibold text-[#2D3339] mb-2">Formación y experiencia profesional:</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>
+                    • Miembro activo de la Sociedad Mexicana de Oftalmología (SMO) desde 2015.
+                  </li>
+                  <li>
+                    • Miembro de la European Society of Cataract & Refractive Surgeons (ESCRS) desde 2014.
+                  </li>
+                  <li>
+                    • Médico Adscrito en Segmento Anterior y Catarata en la Asociación para Evitar la Ceguera en México (APEC) desde 2015.
+                  </li>
+                  <li>
+                    • Especialista en Córnea, Catarata y Cirugía Refractiva por el Stein Eye Institute, University of California, Los Angeles (UCLA), 2018.
+                  </li>
+                </ul>
+              </div>
 
-            
+              <blockquote className="border-l-4 border-yellow-400 pl-4 italic text-gray-600">
+                “Tu salud visual nos importa. Permítenos acompañarte con un equipo profesional y comprometido con tu bienestar.”
+              </blockquote>
+            </div>
 
             {/* Imagen */}
             <div className="relative aspect-4/3 w-full">
@@ -295,9 +292,9 @@ export default function Home() {
     {/* Servicio 1: Ojo Seco */}
     <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
       <FaEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
-      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Ojo Seco</h3>
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">OJO SECO</h3>
       <p className="text-gray-600 mb-4">
-        Tratamientos especializados para el síndrome de ojo seco. Alivio y prevención de molestias.
+        El síndrome de ojo seco es una enfermedad crónica y, en muchos casos, progresiva.
       </p>
       <Button
         variant="outline"
@@ -313,9 +310,9 @@ export default function Home() {
     {/* Servicio 2: Miopía */}
     <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
       <FaGlasses className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
-      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Miopía</h3>
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Miopia</h3>
       <p className="text-gray-600 mb-4">
-        Diagnóstico y corrección de la miopía. Soluciones personalizadas para una visión clara.
+        La miopía es un trastorno visual muy común: permite ver nítidos los objetos cercanos, pero los lejanos se perciben borrosos.
       </p>
       <Button
         variant="outline"
@@ -333,7 +330,7 @@ export default function Home() {
       <MdRemoveRedEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
       <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Astigmatismo</h3>
       <p className="text-gray-600 mb-4">
-        Corrección del astigmatismo con técnicas avanzadas. Mejora tu calidad visual.
+        Corrección y manejo visual avanzado. El astigmatismo es una condición ocular frecuente que se presenta cuando la córnea o el cristalino tienen una curvatura irregular.
       </p>
       <Button
         variant="outline"
@@ -349,9 +346,9 @@ export default function Home() {
      {/* Servicio 4: Cataratas */}
      <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
       <MdRemoveRedEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
-      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Cataratas</h3>
+      <h3 className="text-xl font-semibold text-[#2D3339] mb-2">Catarata</h3>
       <p className="text-gray-600 mb-4">
-        Diagnóstico y tratamiento de cataratas. Mejora tu calidad visual con cirugía láser.
+        Las cataratas se producen cuando las proteínas del cristalino se agrupan, provocando que este se vuelva opaco y afecte la visión.
       </p>
       <Button
         variant="outline"

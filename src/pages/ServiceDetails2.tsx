@@ -4,13 +4,13 @@ export default function ServiceDetails() {
   const service = {
     title: "Astigmatismo",
     subtitle: "Corrección y manejo visual avanzado",
-    description: "El astigmatismo es una condición ocular común que ocurre cuando la córnea o el cristalino tienen una forma irregular, lo que provoca una visión borrosa o distorsionada tanto de cerca como de lejos. Esta condición puede corregirse con anteojos, lentes de contacto o cirugía refractiva.",
+    description: "El astigmatismo es una condición ocular frecuente que se presenta cuando la córnea o el cristalino tienen una curvatura irregular. Esto ocasiona una visión borrosa o distorsionada, tanto de cerca como de lejos. Afortunadamente, puede corregirse de manera efectiva mediante anteojos, lentes de contacto o cirugía refractiva.",
     iconSrc: "/img/service2.jpeg",
     details: [
-      "Evaluación completa de la salud ocular mediante exámenes especializados.",
-      "Prescripción de anteojos o lentes de contacto personalizados.",
-      "Opciones de cirugía refractiva para corrección permanente.",
-      "Seguimiento regular para ajustar tratamientos según sea necesario.",
+      "Evaluación completa de la salud ocular a través de exámenes especializados.",
+      "Prescripción personalizada de anteojos o lentes de contacto.",
+      "Opciones de cirugía refractiva para una corrección más permanente.",
+      "Seguimiento regular para ajustar el tratamiento según tus necesidades.",
     ],
   };
 

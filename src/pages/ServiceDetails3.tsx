@@ -3,10 +3,10 @@ import ScrollToTop from "../components/ScrollToTop";
 
 export default function ServiceDetails() {
   const service = {
-    title: "Miopía",
+    title: "Miopia",
     subtitle: "Diagnóstico y tratamiento avanzado",
     description:
-      "La miopía es un trastorno común de la visión en el que puedes ver con claridad los objetos cercanos, pero los objetos lejanos se ven borrosos. Ofrecemos exámenes de detección temprana, diagnósticos precisos y opciones de tratamiento personalizadas, incluyendo corrección con lentes, terapias y cirugías refractivas como el LASIK.",
+      "La miopía es un trastorno visual muy común: permite ver nítidos los objetos cercanos, pero los lejanos se perciben borrosos. En nuestra práctica ofrecemos una evaluación integral que incluye detección temprana, diagnóstico preciso y opciones de tratamiento personalizadas. Estas pueden ir desde la corrección con lentes o lentes de contacto, hasta terapias especializadas y cirugías refractivas con tecnología láser, como el LASIK.",
     iconSrc: "/img/service3.jpeg",
     details: [
       "Exámenes de detección temprana para niños y adultos.",

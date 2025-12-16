@@ -8,15 +8,15 @@ import ScrollToTop from "../components/ScrollToTop";
 
 export default function ServiceDetails() {
   const service = {
-    title: "Cataratas",
+    title: "Catarata",
     subtitle: "Detección y tratamiento avanzado",
     description:
-      "Las cataratas se forman cuando las proteínas del cristalino del ojo se agrupan, causando que éste se nuble y afecte la visión. La mayoría de las cataratas se desarrollan lentamente, pero con el tiempo pueden interferir significativamente en la calidad de vida. Ofrecemos diagnósticos precisos y tratamientos modernos, incluyendo cirugía láser y facoemulsificación.",
+      "Las cataratas se producen cuando las proteínas del cristalino se agrupan, provocando que este se vuelva opaco y afecte la visión. Aunque suelen desarrollarse de manera lenta, con el tiempo pueden interferir de forma significativa en la calidad de vida. En nuestra clínica ofrecemos diagnósticos precisos y tratamientos de última generación, incluyendo cirugía láser y facoemulsificación.",
     iconSrc: "/img/service4.jpeg",
     details: [
-      "Examen de agudeza visual para evaluar la visión.",
-      "Examen de retina y cristalino con tecnología avanzada.",
-      "Técnicas modernas como la facoemulsificación y cirugía láser.",
+      "Examen de agudeza visual para evaluar la calidad de la visión.",
+      "Evaluación de retina y cristalino con tecnología avanzada.",
+      "Técnicas modernas como la facoemulsificación y la cirugía láser.",
       "Seguimiento personalizado para garantizar una recuperación óptima.",
     ],
   };

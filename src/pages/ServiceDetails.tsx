@@ -3,15 +3,15 @@ import Sidebar from "../components/Sidebar";
 
 export default function ServiceDetails() {
   const service = {
-    title: "Síndrome del ojo seco",
+    title: "OJO SECO",
     subtitle: "Tratamientos y manejo avanzado",
-    description: "El síndrome del ojo seco es una enfermedad crónica y suele ser progresiva. Generalmente, el ojo seco se produce por un déficit de lágrima (escasa producción o excesiva evaporación) o porque esta es de mala calidad debido a problemas como la disfunción de las glándulas de Meibomio o la blefaritis. Además, suele ir asociado a diferentes grados de inflamación.",
+    description: "El síndrome de ojo seco es una enfermedad crónica y, en muchos casos, progresiva. Suele presentarse por una disminución en la cantidad de lágrima —ya sea por poca producción o por una evaporación excesiva— o por alteraciones en su calidad, como ocurre en la disfunción de las glándulas de Meibomio o en la blefaritis. Con frecuencia, estos cambios se acompañan de distintos grados de inflamación que agravan los síntomas.",
     iconSrc: "/img/service1.jpeg",
     details: [
       "Diagnóstico temprano mediante pruebas especializadas.",
       "Tratamientos no invasivos con tecnología de punta.",
-      "Seguimiento personalizado para evitar progresión de la enfermedad.",
-      "Uso de lágrimas artificiales y otros productos lubricantes.",
+      "Seguimiento personalizado para prevenir la progresión de la enfermedad.",
+      "Uso de lágrimas artificiales y otros lubricantes avanzados adaptados a cada necesidad.",
     ],
   };
 
