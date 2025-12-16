@@ -121,11 +121,11 @@ export default function Home() {
       <main className="md:ml-[320px]">
       {/* Imagen de Fondo */}
      <section 
-    className="relative h-screen bg-cover bg-center bg-no-repeat"
+    className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
     style={{ backgroundImage: "url('/img/img2.jpg')" }}
   >
-    <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center text-white">
-      <div className="px-4">
+    <div className="absolute inset-0 bg-black/50"></div>
+    <div className="relative z-10 px-4 text-center text-white py-20">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
         ¡Hola! Soy el Dr. Erick O. Encampira Luna
         </h1>
@@ -148,7 +148,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </div>
     
      </section>
 
@@ -288,7 +287,7 @@ export default function Home() {
     Cuidamos de tu salud visual con tratamientos especializados. Descubre cómo podemos ayudarte.
   </p>
 
-  <div className="grid grid-cols-4 md:grid-cols-2 gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     {/* Servicio 1: Ojo Seco */}
     <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
       <FaEye className="h-12 w-12 mx-auto mb-4 text-[#2D3339]" />
@@ -412,11 +411,11 @@ export default function Home() {
              <div className="relative flex items-center justify-center">
                <button
                  onClick={handlePrev}
-                 className="absolute left-10 p-2 bg-gray-200 opacity-40 rounded-full hover:bg-gray-500 focus:outline-none"
+                 className="absolute left-0 md:left-10 p-2 bg-gray-200 opacity-40 rounded-full hover:bg-gray-500 focus:outline-none z-10"
                >
                  <ChevronLeft className="h-6 w-6 text-gray-700" />
                </button>
-               <div className="w-full md:w-3/5 text-center space-y-4">
+               <div className="w-full md:w-3/5 text-center space-y-4 px-12 md:px-0">
                  <div className="w-20 h-20 mx-auto rounded-full  flex items-center justify-center border-2 border-[#2D3339]">
                    <img src="/logo.png" className="h-10 w-10 text-[#2D3339]" />
                  </div>
@@ -430,7 +429,7 @@ export default function Home() {
                </div>
                <button
                  onClick={handleNext}
-                 className="absolute right-10 p-2 bg-gray-200 opacity-40 rounded-full hover:bg-gray-500 focus:outline-none"
+                 className="absolute right-0 md:right-10 p-2 bg-gray-200 opacity-40 rounded-full hover:bg-gray-500 focus:outline-none z-10"
                >
                  <ChevronRight className="h-6 w-6 text-gray-700" />
                </button>
