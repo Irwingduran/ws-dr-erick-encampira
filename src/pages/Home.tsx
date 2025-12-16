@@ -103,8 +103,16 @@ const reviews = [
   },
 ];
 
+const profileImages = [
+  "/img/img1.jpg",
+  "/img/img8.jpeg",
+  "/img/img9.jpeg",
+  "/img/img10.jpeg",
+];
+
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
@@ -112,6 +120,14 @@ export default function Home() {
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length);
+  };
+
+  const handleNextProfile = () => {
+    setCurrentProfileIndex((prev) => (prev + 1) % profileImages.length);
+  };
+
+  const handlePrevProfile = () => {
+    setCurrentProfileIndex((prev) => (prev - 1 + profileImages.length) % profileImages.length);
   };
   
   return (
@@ -250,13 +266,44 @@ export default function Home() {
               </blockquote>
             </div>
 
-            {/* Imagen */}
-            <div className="relative aspect-4/3 w-full">
+            {/* Imagen (Carrusel) */}
+            <div className="relative aspect-4/3 w-full group overflow-hidden rounded-lg">
               <img
-                src="/img/img1.jpg"
+                src={profileImages[currentProfileIndex]}
                 alt="Dr. Erick O. Encampira Luna"
-                className="rounded-lg object-cover w-full h-full"
+                className="object-cover w-full h-full transition-all duration-500"
               />
+              
+              {/* Controles */}
+              <button
+                onClick={handlePrevProfile}
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                aria-label="Anterior imagen"
+              >
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+              
+              <button
+                onClick={handleNextProfile}
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                aria-label="Siguiente imagen"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </button>
+
+              {/* Indicadores */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                {profileImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentProfileIndex(index)}
+                    className={`h-2 w-2 rounded-full transition-colors ${
+                      index === currentProfileIndex ? "bg-white" : "bg-white/50"
+                    }`}
+                    aria-label={`Ir a imagen ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
