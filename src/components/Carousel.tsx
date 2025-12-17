@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
+  "/img/img8.jpeg",
+  "/img/img9.jpeg",
+  "/img/img10.jpeg",
   "/img/slide1.jpg",
   "/img/slide2.jpg",
   "/img/slide3.jpg",
@@ -12,6 +15,7 @@ const images = [
   "/img/slide8.jpg",
   "/img/slide9.jpg",
   "/img/slide10.jpg",
+
 ];
 
 const Carousel = () => {
