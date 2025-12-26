@@ -28,9 +28,9 @@ export default function ContactPage() {
               <CardContent className="space-y-4 md:space-y-6">
                 <div className="space-y-2">
                   <h3 className="font-medium">Dirección:</h3>
-                  <p className="text-gray-600">Carmen Serdán 301,</p>
+                  <p className="text-gray-600">Andrés Benavides 326,</p>
                   <p className="text-gray-600">
-                    Residencial Colón y Colonia Ciprés,
+                    Colonia Residencial Colón C.P. 50120,
                     <br />
                     Toluca de Lerdo, Toluca, Estado de México.
                   </p>
@@ -97,7 +97,7 @@ export default function ContactPage() {
               <CardContent>
                 <div className="aspect-square w-full rounded-lg bg-gray-100 overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3766.1398321682136!2d-99.66372922478959!3d19.27628438196991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE2JzM0LjYiTiA5OcKwMzknNDAuMiJX!5e0!3m2!1ses!2smx!4v1737132219114!5m2!1ses!2smx"
+                    src="https://maps.app.goo.gl/uPaq1NS8AXX9kosWA"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
