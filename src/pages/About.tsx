@@ -42,7 +42,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  title: "Neurocirujano",
+                  title: "Oftalmólogo",
                   description:
                     "Miembro activo de la Sociedad Mexicana de Oftalmología, SMO, 2015.",
                 },
