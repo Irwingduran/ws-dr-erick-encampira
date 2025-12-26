@@ -33,7 +33,7 @@ const otherServices = [
   { name: "Retinopatía diabética" },
   { name: "Ojo rojo" },
   { name: "Desprendimiento de retina" },
-  { name: "Estrabismo convergente (ojos bizcos)" },
+  { name: "Estrabismo convergente" },
   { name: "Conjuntivitis" },
   { name: "Pterigión" },
   { name: "Queratocono"},
