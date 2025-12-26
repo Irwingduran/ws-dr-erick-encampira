@@ -44,22 +44,22 @@ export default function About() {
                 {
                   title: "Neurocirujano",
                   description:
-                    "Egresado del Instituto Nacional de Neurología y Neurocirugía (INNN).",
+                    "Miembro activo de la Sociedad Mexicana de Oftalmología, SMO, 2015.",
                 },
                 {
-                  title: "Alta Especialidad",
+                  title: "Miembro de la ESCRS",
                   description:
-                    "Curso de Radioneurocirugía en el INNN, avalado por la UNAM.",
+                    "European Society of Cataract & Refractive Surgeons, 2014.",
                 },
                 {
-                  title: "Maestría y Doctorado",
+                  title: "Médico Adscrito de segmento anterior y catarata APEC",
                   description:
-                    "Ciencias Médicas por la UNAM, además de Economía y Negocios con Gestión en Salud por la Universidad Anáhuac.",
+                    "Asociación para Evitar la Ceguera en México, 2015.",
                 },
                 {
-                  title: "Diplomado en Harvard",
+                  title: "Especialista en Córnea, Catarata, y Cirugía refractiva",
                   description:
-                    "Principles and Practice of Clinical Research en la Escuela de Medicina de Harvard.",
+                    "Stein Eye Institute - University of California, Los Angeles (UCLA), 2018.",
                 },
               ].map((item, index) => (
                 <div
