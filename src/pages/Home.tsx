@@ -455,7 +455,7 @@ export default function Home() {
           <Mockup/>
         </section>
 
-<section>
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -561,7 +561,6 @@ export default function ContactPage() {
     </div>
   )
 }
-</section>
         
         <section>
           <Parners/>
