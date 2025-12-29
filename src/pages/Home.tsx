@@ -6,7 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Carousel from "@/components/Carousel";
 import Mockup from "./Mockup";
 import Parners from "./Partners";
-import Contact from "./Contact";
+import ContactSection from "@/components/ContactSection";
 import VideoCarousel from "@/components/VideoCarousel";
 import { FaEye, FaGlasses } from "react-icons/fa";
 import { MdRemoveRedEye } from "react-icons/md";
@@ -455,8 +455,8 @@ export default function Home() {
            <section>
           <Mockup/>
         </section>
-        <section>
-          <Contact/>
+        <section className="mt-12 p-6 md:p-10">
+          <ContactSection/>
         </section>
         <section>
           <Parners/>
